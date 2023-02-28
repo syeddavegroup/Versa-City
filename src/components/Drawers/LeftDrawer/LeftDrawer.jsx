@@ -11,7 +11,7 @@ import ListItemText from "@mui/material/ListItemText";
 
 import Time from "./Time";
 
-import { drawerMenuItems } from "../../data/drawerItems";
+import { drawerMenuItems } from "../../../data/drawerItems";
 
 const drawerWidth = 232.2;
 

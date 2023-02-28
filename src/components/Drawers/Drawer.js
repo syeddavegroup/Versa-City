@@ -6,8 +6,8 @@ import MuiAppBar from "@mui/material/AppBar";
 import Divider from "@mui/material/Divider";
 
 import Header from "../Header/Header";
-import LeftDrawer from "./LeftDrawer";
-import RightDrawer from "./RightDrawer";
+import LeftDrawer from "./LeftDrawer/LeftDrawer";
+import RightDrawer from "./RightDrawer/RightDrawer";
 import Main from "../Main/Main";
 
 const AppBar = styled(MuiAppBar, {

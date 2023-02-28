@@ -1,7 +1,11 @@
 import * as React from "react";
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
+import { Drawer, Stack } from "@mui/material";
+
+import Notifications from "./Notifications";
+import LeaderBoard from "./LeaderBoard";
+import Transactions from "./Transactions";
 
 const drawerWidth = 270;
 
@@ -31,11 +35,13 @@ export default function RightDrawer({ open }) {
       <Box bgcolor="#151515" height="100vh" color="#d0d0d0">
         <DrawerHeader />
 
-        <Box px={2} pt={4}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
-          nulla iure laborum rerum consectetur officiis asperiores temporibus
-          aliquid. Quaerat, ullam!
-        </Box>
+        <Stack px={2} pt={5} spacing={2}>
+          <Notifications />
+
+          <LeaderBoard />
+
+          <Transactions />
+        </Stack>
       </Box>
     </Drawer>
   );
